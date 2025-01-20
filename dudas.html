@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="externo.css">
+    <style>
+        main{
+        font-family: "Montserrat";
+        font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecero-1">
+            <p>Correo de contacto: futbolchampin@gmail.com</p>
+            <p>Telefono de contacto: XXXXXXXXX</p>
+            <div class="carro">
+            <a href="carrito.html"><img  src="imagenes/carrito.png" alt="carrito" ></a>
+            </div>
+            <div class="icono_perfil">
+            <a href="perfil.html"><img  src="imagenes/usuario.png" alt="usuario" ></a>
+            </div>
+            <div class="interrogacion">
+            <a href="portada.html"><img  src="imagenes/interrogacion.png" alt="interrogacion"></a>
+            </div>
+            <div class="video">
+                <a href="video.html"><img  src="imagenes/video.png" alt="video"></a>
+            </div>
+        </div>
+        <div class="cabecero-2">
+            <a class="titulo" href="portada.html">
+            <h1 class="titulo">Futbol Champagne</h1>
+            <img src="imagenes/balon-de-futbol.png" alt="" width="120" height="120" >
+        </a>
+        </div>
+        </header>
+        <main>
+            <h2>Tienes alguna duda, queja, o sugerencia? ¡Rellena el siguiente formulario y te responderemos lo antes posible!</h2>
+            <form action="" method="post">
+                <label for="tipo">Para que es el formulario:</label>
+                <select name="tipo" id="tipo" required>
+                    <option value="default" selected disabled hidden>Seleccione una opción</option>
+                    <option value="duda">Duda</option>
+                    <option value="queja">Queja</option>
+                    <option value="sugerencia">Sugerencia</option>
+                </select>
+
+                <br><br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <br><br>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" required >
+                <br><br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" name="correo" id="correo" required>
+                <br><br>
+                <label for="telefono">Numero de contacto:</label>
+                <input type="text" name="telefono" id="telefono">
+                <br><br>
+                <label for="texto">Cuentanos:</label>
+                <br>
+                <textarea name="texto" id="texto" rows="10" cols="30" required></textarea>
+                <br><br>
+                <input class="enviar" type="submit" value="Enviar mensaje">
+            </form>
+        <main>
+</body>
+</html>
